@@ -1,10 +1,8 @@
 {
-    "name": "Respect\/Template",
-    "description": "Pure HTML templates",
-    "version": "0.1.5",
+    "name": "Respect/Template",
+    "description": "An opionated revision of HTML templates.",
     "type": "library",
-    "time": "2012-04-11 09:00:28",
-    "homepage": "",
+    "homepage": "http://respect.li",
     "license": "BSD Style",
     "authors": [
         {
@@ -21,12 +19,17 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "zendframework/zend-dom": "2.2.*",
+        "symfony/finder": "2.4.*"
+    },
+    "require-dev": {
+        "behat/behat": "2.5.*",
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
         "psr-0": {
-            "Respect\\Template": "library\/",
-            "Zend\\Dom": "library\/"
+            "Respect": "library"
         }
     }
 }
