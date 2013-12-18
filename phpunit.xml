@@ -1,6 +1,6 @@
 <phpunit backupGlobals="false"
          backupStaticAttributes="false" 
-         bootstrap="bootstrap.php"
+         bootstrap="tests/bootstrap.php"
          cacheTokens="true"
          colors="true"
          convertErrorsToExceptions="true"
@@ -10,9 +10,15 @@
          stopOnFailure="false"
          syntaxCheck="false"
          verbose="false">
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/library</directory>
+        </testsuite>
+    </testsuites>
+
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="false">
-            <directory>../library/Respect/</directory>
+            <directory>library/Respect/</directory>
         </whitelist>
     </filter>
 </phpunit>
